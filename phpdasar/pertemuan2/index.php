@@ -13,25 +13,46 @@
 // 2. HTML di dalam PHP
 
 // Variabel dan Tipe Data
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar PHP</title>
-</head>
-<body>
+// Variabel
+// tidak boleh diawali angka, tapi boleh mengandung angka
 
-    <!-- 1. PHP di dalam HTML -->
-    <h1>Halo, Selamat Datang <?php echo "Hermawan Yuniarto"; ?></h1>
-    <P><?php echo "ini adalah paragraf"; ?></P>
+// $nama = "Hermawan Yuniarto";
+// echo "Halo, nama saya $nama";
 
-    <!-- 2. HTML di dalam PHP -->
-    <?php
-        echo "<h1>Halo, Selamat Datang Hermawan Yuniarto</h1>"
-    ?>
-    
-</body>
-</html>
+// Operator
+// aritmatika
+// + - * / %
+// $x = 10;
+// $y = 20;
+// echo $x * $y;
+
+// penggabung string / concatenation / concat
+// .
+// $nama_depan = "Hermawan";
+// $nama_belakang = "Yuniarto";
+// echo $nama_depan . "" . $nama_belakang;
+
+// Assignment
+// =, +=, -=, *=, /=, %=, .=
+// $x = 1;
+// $x -= 5;
+// echo $x;
+// $nama = "Hermawan";
+// $nama .= " ";
+// $nama .= "Yuniarto";
+// echo $nama;
+
+// perbandingan
+// <, >, <=, >=, ==, !=
+// var_dump(1 == "1");
+
+// Identitas
+// ===, !==
+// var_dump(1 === "1");
+
+// Logika
+// &&, ||, !
+// $x = 30;
+// var_dump($x < 20 && $x % 2 == 0);
+$x = 30;
+var_dump($x < 20 || $x % 2 == 0);
