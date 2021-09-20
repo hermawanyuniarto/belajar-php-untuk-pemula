@@ -14,5 +14,8 @@
     // membuat sendiri detik
     // mktime (0,0,0,0,0,0)
     // jam, menit, detik, bulan, tanggal, tahun
-    echo date("l", mktime(0,0,0,6,24,1982));
+    // echo date("l", mktime(0,0,0,6,24,1982));
+
+    // strtotime
+    echo date("l", strtotime("24 june 1982"));
 ?>
