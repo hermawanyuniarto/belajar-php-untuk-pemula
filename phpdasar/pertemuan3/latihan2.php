@@ -9,7 +9,7 @@ $x = 20;
 if ($x < 20 ) {
     echo "benar";
 } elseif ($x == 20) {
-    echo "bingo!";
+    echo "bingoo!";
 } else {
     echo "salah";
 }
