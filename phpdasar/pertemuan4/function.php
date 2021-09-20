@@ -1,5 +1,5 @@
 <?php
-    function salam($waktu, $nama){
+    function salam($waktu = "Datang", $nama = "Admin"){
         return "Selamat $waktu, $nama!";
     }
 ?>
@@ -12,6 +12,6 @@
     <title>Latihan Function</title>
 </head>
 <body>
-    <h1><?= salam("malam", "Hermawan"); ?></h1>
+    <h1><?= salam(); ?></h1>
 </body>
 </html>
