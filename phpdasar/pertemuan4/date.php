@@ -1,3 +1,3 @@
 <?php
-    echo date("m");
+    echo date("M");
 ?>
