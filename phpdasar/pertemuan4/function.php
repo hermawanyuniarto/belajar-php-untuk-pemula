@@ -15,3 +15,5 @@
     <h1><?= salam(); ?></h1>
 </body>
 </html>
+
+<!-- selesai -->
