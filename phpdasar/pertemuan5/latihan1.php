@@ -18,5 +18,9 @@
     echo "<br>";
     
     print_r($bulan);
+    echo "<br>";
+
+    // menampilkan 1 elemen pada array
+    echo $arr1 [0];
 
 ?>
