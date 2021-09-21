@@ -15,8 +15,8 @@
     // menampilkan array
     // var_dump() / print_r()
     var_dump($hari);
-    <br>
-    <br>
+    echo <br>;
+    
     print_r($bulan);
 
 ?>
