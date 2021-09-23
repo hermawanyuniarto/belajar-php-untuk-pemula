@@ -11,7 +11,7 @@ $angka = [3, 5, 9, 35, 59, 93, 99, 39];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latihan 2</title>
     <style>
-        div {
+        .kotak {
             width: 50px;
             height: 50px;
             background-color: salmon;
@@ -20,11 +20,22 @@ $angka = [3, 5, 9, 35, 59, 93, 99, 39];
             margin: 3px;
             float: left;
         }
+        .clear {
+            clear: both;
+        }
     </style>
 </head>
 <body>
+    <!-- cara pertama -->
     <?php for ($i=0; $i < count($angka) ; $i++) { ?>
-        <div><?= $angka[$i]; ?></div>
+        <div class="kotak"><?= $angka[$i]; ?></div>
+    <?php } ?>
+
+    <div class="clear"></div>
+
+    <!-- cara kedua -->
+    <?php foreach( $angka as $a ) { ?>
+        <div class="kotak"><?= $a; ?></div>
     <?php } ?>
     
 </body>
