@@ -37,6 +37,13 @@ $angka = [3, 5, 9, 35, 59, 93, 99, 39];
     <?php foreach( $angka as $a ) { ?>
         <div class="kotak"><?= $a; ?></div>
     <?php } ?>
+
+    <div class="clear"></div>
+
+    <!-- cara ketiga -->
+    <?php foreach( $angka as $a ) : ?>
+        <div class="kotak"><?= $a; ?></div>
+    <?php endforeach; ?>
     
 </body>
 </html>
