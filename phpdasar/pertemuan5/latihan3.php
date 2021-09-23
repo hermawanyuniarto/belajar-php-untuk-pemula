@@ -21,10 +21,10 @@ $mahasiswa = [
 
     <?php foreach ($mahasiswa as $m) : ?>
         <ul>
-            <li><?= $m[0]; ?></li>
-            <li><?= $m[1]; ?></li>
-            <li><?= $m[2]; ?></li>
-            <li><?= $m[3]; ?></li>
+            <li>Nama : <?= $m[0]; ?></li>
+            <li>NIM : <?= $m[1]; ?></li>
+            <li>Jurusan : <?= $m[2]; ?></li>
+            <li>Email : <?= $m[3]; ?></li>
         </ul>
     <?php endforeach; ?>
 
