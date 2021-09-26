@@ -22,6 +22,10 @@
             transform: rotate(360deg);
             border-radius: 50%;
         }
+
+        .clear{
+            clear: both;
+        }
     </style>
 </head>
 
@@ -39,6 +43,7 @@ $angka = [
     <?php foreach( $a as $n ) : ?>
         <div class="kotak"><?= $n; ?></div>
     <?php endforeach; ?>
+    <div class="clear"></div>
 <?php endforeach; ?>
 
 </body>
