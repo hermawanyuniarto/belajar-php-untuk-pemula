@@ -1,8 +1,25 @@
 <?php
+// $mahasiswa = [
+//     ["Hermawan Yuniarto", "2002240682", "hermawanyuniarto@gmail.com", "Sistem Informatika"],
+//     ["Galeh Firmansyah", "2002130785", "galih@gmail.com", "Teknik Informatika"]
+// ];
+
+// Array Associative
+// definisinya sama seperti array numerik, kecuali
+// key-nya adalah string yang buat sendiri
 $mahasiswa = [
-    ["Hermawan Yuniarto", "2002240682", "hermawanyuniarto@gmail.com", "Sistem Informatika"],
-    ["Galeh Firmansyah", "2002130785", "galih@gmail.com", "Teknik Informatika"]
+    [
+        "nama" => "Hermawan Yuniarto", "nrp" => "2002240682",
+        "email" => "hermawanyuniarto@gmail.com",
+        "jurusan" => "Sistem Informasi"
+    ],
+    [
+        "nama" => "Iwan Budianto", "nrp" => "2002010979",
+        "email" => "iwanbudianto@gmail.com",
+        "jurusan" => "Teknik Jaringan"
+    ]
 ];
+
 ?>
 
 <!DOCTYPE html>
@@ -20,10 +37,10 @@ $mahasiswa = [
 
     <?php foreach ($mahasiswa as $mhs) : ?>
         <ul>
-            <li>Nama : <?= $mhs[0]; ?></li>
-            <li>NIM : <?= $mhs[1]; ?></li>
-            <li>Email : <?= $mhs[2]; ?></li>
-            <li>Jurusan : <?= $mhs[3]; ?></li>
+            <li>Nama : <?= $mhs["nama"]; ?></li>
+            <li>NIM : <?= $mhs["nrp"]; ?></li>
+            <li>Email : <?= $mhs["email"]; ?></li>
+            <li>Jurusan : <?= $mhs["jurusan"]; ?></li>
         </ul>
     <?php endforeach; ?>
 
