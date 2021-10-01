@@ -11,12 +11,14 @@ $mahasiswa = [
     [
         "nama" => "Hermawan Yuniarto", "nrp" => "2002240682",
         "email" => "hermawanyuniarto@gmail.com",
-        "jurusan" => "Sistem Informasi"
+        "jurusan" => "Sistem Informasi",
+        "gambar" => "1.jpg"
     ],
     [
         "nama" => "Iwan Budianto", "nrp" => "2002010979",
         "email" => "iwanbudianto@gmail.com",
-        "jurusan" => "Teknik Jaringan"
+        "jurusan" => "Teknik Jaringan",
+        "gambar" => "2.jpg"
     ]
 ];
 
@@ -37,6 +39,9 @@ $mahasiswa = [
 
     <?php foreach ($mahasiswa as $mhs) : ?>
         <ul>
+            <li>
+                <img src="img/<?= $mhs["gambar"]; ?>">
+            </li>
             <li>Nama : <?= $mhs["nama"]; ?></li>
             <li>NIM : <?= $mhs["nrp"]; ?></li>
             <li>Email : <?= $mhs["email"]; ?></li>
