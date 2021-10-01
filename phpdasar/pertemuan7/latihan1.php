@@ -1,10 +1,5 @@
-<?php 
-// variabel scope / lingkup variabel
-$x = 10;
-
-function tampilX(){
-    global $x;
-    echo $x;
-}
-
-tampilX();
+<?php
+// Super Global
+// Variabel global milik PHP
+// merupakan array associative
+var_dump($_GET);
